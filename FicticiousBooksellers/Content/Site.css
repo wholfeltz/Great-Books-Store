@@ -1,0 +1,59 @@
+﻿body {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(34, 34, 34, 0.95);
+    padding: 20px;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1.5em;
+    font-size: 1.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
