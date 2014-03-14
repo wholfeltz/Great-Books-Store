@@ -12,10 +12,10 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li><a href="#"> Books</a></li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
             </ul>
         </nav>
     </header>
@@ -26,6 +26,9 @@
         @RenderBody()
     </main>
     <footer>
+
     </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
